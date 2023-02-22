@@ -10,12 +10,12 @@
 # TO DOCKER COMPOSE
 
 Build with no cache  
-`docker-compose -f dev.yml build --no-cache`
+`docker-compose -f dev.yml build --no-cache`  
 Start the services  
-`docker-compose -f dev.yml up`
+`docker-compose -f dev.yml up`  
 List the services  
-`docker-compose -f dev.yml ps`
+`docker-compose -f dev.yml ps`  
 List the containers  
-`docker ps`
+`docker ps`  
 Stop services  
-`docker-compose -f dev.yml stop`
+`docker-compose -f dev.yml stop`  

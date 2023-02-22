@@ -9,13 +9,13 @@
 
 # TO DOCKER COMPOSE
 
-Build with no cache
-    docker-compose -f dev.yml build --no-cache
-Start the services
-    docker-compose -f dev.yml up
-List the services
-    docker-compose -f dev.yml ps
-List the containers
-    docker ps
-Stop services
-    docker-compose -f dev.yml stop
+Build with no cache  
+`docker-compose -f dev.yml build --no-cache`
+Start the services  
+`docker-compose -f dev.yml up`
+List the services  
+`docker-compose -f dev.yml ps`
+List the containers  
+`docker ps`
+Stop services  
+`docker-compose -f dev.yml stop`

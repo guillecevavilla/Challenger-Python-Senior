@@ -1,0 +1,7 @@
+[2023-02-22 16:21:11][INFO][autoreload.py - django.utils.autoreload:637] Watching for file changes with StatReloader
+[2023-02-22 16:21:13][DEBUG][connectionpool.py - urllib3.connectionpool:971] Starting new HTTPS connection (1): o273296.ingest.sentry.io:443
+[2023-02-22 16:21:13][WARNING][basehttp.py - django.server:161] "GET /api/v1/vehicle/generar_informe/?email=guillecevavilla@gmail.com&page=1 HTTP/1.1" 404 36
+[2023-02-22 16:21:14][DEBUG][connectionpool.py - urllib3.connectionpool:452] https://o273296.ingest.sentry.io:443 "POST /api/4504718853734400/envelope/ HTTP/1.1" 200 41
+[2023-02-22 16:21:22][INFO][basehttp.py - django.server:161] "POST /api/v1/cargar_infraccion/ HTTP/1.1" 201 111
+[2023-02-22 16:21:22][DEBUG][connectionpool.py - urllib3.connectionpool:452] https://o273296.ingest.sentry.io:443 "POST /api/4504718853734400/envelope/ HTTP/1.1" 200 41
+[2023-02-22 16:21:32][DEBUG][selector_events.py - asyncio:59] Using selector: EpollSelector

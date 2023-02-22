@@ -1,0 +1,116 @@
+{
+	"info": {
+		"_postman_id": "d5df08a4-8fe3-42b4-b377-d612608ae187",
+		"name": "Challenger",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "10811191"
+	},
+	"item": [
+		{
+			"name": "cargar_infraccion/",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "63c1debc91c65176e302d082509868c7fe50104e",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "HTTP_AUTHORIZATION",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjgxODc0NTk0LCJpYXQiOjE2NzY2OTA1OTQsImp0aSI6Ijc0YTcwZDYzYjNkYTQ0OWI5MjhlMjRlNTdhY2Q1YjA0IiwidXNlcl9pZCI6Nn0.uI618t5AV0KkQG3Imxtb7_rX-yCrfHapDAFpUW5XjpQ",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\"placa_patente\": \"2222\",\n\"timestamp\": \"2023-02-17 12:02:02\",\n\"comentarios\": \"por pasar un rojo\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/api/v1/cargar_infraccion/",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"cargar_infraccion",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "generar_informe/",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "63c1debc91c65176e302d082509868c7fe50104e",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "HTTP_AUTHORIZATION",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjgxODc0NTk0LCJpYXQiOjE2NzY2OTA1OTQsImp0aSI6Ijc0YTcwZDYzYjNkYTQ0OWI5MjhlMjRlNTdhY2Q1YjA0IiwidXNlcl9pZCI6Nn0.uI618t5AV0KkQG3Imxtb7_rX-yCrfHapDAFpUW5XjpQ",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\"placa_patente\": \"MMM123\",\n\"timestamp\": \"2023-02-17 12:02:02\",\n\"comentarios\": \"por pasar un rojo\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/api/v1/vehicle/generar_informe/?email=guillecevavilla@gmail.com&page=1",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"vehicle",
+						"generar_informe",
+						""
+					],
+					"query": [
+						{
+							"key": "email",
+							"value": "guillecevavilla@gmail.com"
+						},
+						{
+							"key": "page",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

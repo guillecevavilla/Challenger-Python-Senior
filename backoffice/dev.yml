@@ -1,0 +1,12 @@
+version: '3'
+services:
+  challenger-app:
+    build:
+      context: ./
+    ports:
+      - "3000:3000"
+    container_name: challenger-app
+    stdin_open: true
+    volumes:
+       - ./:/usr/src/app/my-app
+       - /usr/src/app/my-app/node_modules

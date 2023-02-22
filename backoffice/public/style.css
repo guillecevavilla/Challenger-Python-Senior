@@ -1,0 +1,7 @@
+.ck-editor__editable {
+    min-height: 150px;
+}
+.ck-rounded-corners .ck.ck-balloon-panel,
+.ck.ck-balloon-panel.ck-rounded-corners {
+    z-index: 10055 !important;
+}

@@ -1,0 +1,44 @@
+version: "3.0"
+services:
+  challenger_back:
+    build:
+      context: ./back_project 
+      args:
+        env_name: "dev"
+    image: challenger_back
+    container_name: "challenger"
+    environment:
+      PYTHONUNBUFFERED: 1
+    env_file: env/dev.env
+    volumes:
+      - "./back_project/app/:/home/desarrollo"
+    ports:
+      - "8000:8000"
+    networks:
+      - challenger-net
+    stdin_open: true
+    tty: true
+    command: python manage.py runserver 0.0.0.0:8000
+
+
+  challenger_db:
+    image: postgres:12
+    stdin_open: true
+    tty: true
+    volumes:
+      - db-data:/var/lib/postgresql/data
+    ports:
+      - "5431:5432"
+    networks:
+      - challenger-net
+    env_file:
+      - env/dev.env
+
+  
+
+volumes:
+  db-data:
+
+networks:
+  challenger-net:
+    driver: "bridge"

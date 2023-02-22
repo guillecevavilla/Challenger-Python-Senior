@@ -2,8 +2,8 @@
 Challenger Dev Python Senior
 
 # Folders
-backend-django: Backend with django
-backoffice: Frontend with react
+- backend-django: Backend with django  
+- backoffice: Frontend with react  
 
 # Collections
-Challenger.postman_collection.json
+Challenger.postman_collection.json  
